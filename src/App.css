@@ -1,38 +1,275 @@
-.App {
-  text-align: center;
+.w-1 {
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.w-2 {
+  width: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.w-3 {
+  width: 33.33%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.w-4 {
+  width: 25%;
+}
+
+.w-5 {
+  width: 20%;
+}
+
+.w-6 {
+  width: 16.33%;
+}
+
+.gap-50 {
+  gap: 15px;
+}
+
+.hader_mein {
+  background-image: url(../public/banner.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.maindiv {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+ul li {
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav_btn {
+  display: flex;
+  gap: 40px;
+}
+
+.banner-btn {
+  border-radius: 100px;
+}
+
+.service_mein {
+  background-color: #252B42;
+  color: white;
+  height: 250px;
+}
+
+.service_box {
+  justify-content: space-between;
+}
+
+.industyclint_mein {
+  background-color: #8EC2F2;
+}
+
+.industyclint_box_mein {
+  justify-content: space-between;
+  gap: 40%;
+}
+
+.industyclint_box {
+  background-color: white;
+  padding: 20px;
+}
+
+.industrypro_mein {
+  background-color: #252B42;
+}
+
+.industrypro_card {
+  gap: 25px;
+  color: white;
+}
+
+.card-1img {
+  background-image: url(/public/card-1.jpg);
+  background-size: cover;
+  height: 452px;
+  width: 331px;
+  position: relative;
+}
+
+.card-2img {
+  background-image: url(/public/card-2.jpg);
+  background-size: cover;
+  height: 452px;
+  width: 331px;
+  position: relative;
+}
+
+.card-3img {
+  background-image: url(/public/card-3.jpg);
+  background-size: cover;
+  height: 452px;
+  width: 331px;
+  position: relative;
+}
+
+.card-4img {
+  background-image: url(/public/card-4.jpg);
+  background-size: cover;
+  height: 452px;
+  width: 331px;
+  position: relative;
+}
+
+.card_data {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+}
+
+.price_box {
+  background-color: white;
+  /* height: 689px; */
+}
+
+.contact_img {
+  background-image: url(/public/Contactbanner.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact_content {
+  margin-left: 30px;
+}
+
+.contact_content form {
+  max-width: 500px;
+}
+
+.contact_content textarea {
+  width: 100%;
+}
+
+.footer_bg {
+  background-color: #252B42;
+  height: 272px;
+  color: white;
+}
+
+.footer_icon {
+  column-gap: 15px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-column ul li {
+  margin-bottom: 15px;
+}
+
+.footer_social_bg {
+  color: gray;
+  padding-top: 1.5rem;
+}
+
+/* Media  */
+@media only screen and (max-width: 414px) {
+  .hader_mein {
+    background-image: cover;
   }
-  to {
-    transform: rotate(360deg);
+
+  .list_menu {
+    display: none;
   }
+
+  /* Sercive start */
+  .service_box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service_mein {
+    background-color: #252B42;
+    color: white;
+    height: fit-content;
+  }
+
+  /* Sercive end */
+  .industyclint_box_mein {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  /* industrypro_card start*/
+  .industrypro_card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* industrypro_card end*/
+  /* price_box start */
+  .price_meinbox {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  /* price_box end */
+
+  /* Cobtactus start */
+  .contact_mein {
+    text-align: center;
+  }
+
+  .contact_img {
+    background-image: none;
+  }
+
+  .contact_form {
+    width: auto;
+  }
+
+  .magan {
+    width: auto;
+  }
+
+  .chagan {
+    width: 50%;
+  }
+
+  .footer_msg {
+    width: 100%;
+  }
+
+  /* Cobtactus end */
+  /* Footer start */
+  .contact_footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_menu {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer_bg {
+    height: 250vh;
+  }
+
+  .footer_social_bg {
+    flex-direction: column;
+    background-color: #252B42;
+    color: white;
+    margin-top: 10px;
+    gap: 15px;
+  }
+
+  /* Footer end */
 }
